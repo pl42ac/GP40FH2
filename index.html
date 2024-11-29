@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Diagram Quiz</title>
+    <title>GP40FH-2 Diagram Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Interactive Diagram Quiz</h1>
-    <p id="question">Click on: Thorax</p>
-    <div class="diagram-container">
-        <img src="pl42acweb1.png" usemap="#diagram-map" alt="Diagram">
-        <map name="diagram-map">
-            <area shape="rect" coords="50,50,150,150" alt="Thorax" onclick="checkAnswer('thorax')">
-            <area shape="circle" coords="200,200,50" alt="Head" onclick="checkAnswer('head')">
-        </map>
+    <h1>Interactive Diagram Quiz: GP40FH-2</h1>
+    <p id="question">Click on: </p>
+    <div class="diagram-container" id="diagram-container">
+        <img id="diagram" src="https://pl42ac.github.io/GP40FH2/GP40FH-2Web.png" alt="GP40FH-2 Diagram">
     </div>
     <p id="feedback"></p>
     <script src="script.js"></script>
