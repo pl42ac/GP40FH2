@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GP40FH-2 Diagram Quiz</title>
+    <title>Interactive Diagram Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Interactive Diagram Quiz: GP40FH-2</h1>
-    <p id="question">Click on: </p>
-    <div class="diagram-container" id="diagram-container">
-        <img id="diagram" src="https://pl42ac.github.io/GP40FH2/GP40FH-2Web.png" alt="GP40FH-2 Diagram">
-    </div>
-    <p id="feedback"></p>
-    <script src="script.js"></script>
+    <header>
+        <h1>GP40FH-2 Diagram Quiz</h1>
+    </header>
+    <main>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <p>Click on the correct area of the diagram as instructed at the top of the screen. If you select the wrong area, it will move to the next label and record the error.</p>
+            <p>At the end of the quiz, you’ll see a summary of your performance, including missed labels. Hover over missed labels in the list to see their locations highlighted on the diagram.</p>
+        </section>
+        <section class="quiz">
+            <p id="question" class="question"></p>
+            <div id="diagram-container" class="diagram-container">
+                <img id="diagram" src="https://pl42ac.github.io/GP40FH2/GP40FH-2Web.png" alt="Diagram">
+            </div>
+            <p id="feedback" class="feedback"></p>
+        </section>
+    </main>
 </body>
+<script src="script.js"></script>
 </html>
